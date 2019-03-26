@@ -20,6 +20,19 @@ body{
     font-family: 'Italiana', serif;
 }
 
+.main-container{
+    background-image: url("../images/Best-of-Park-city-main-street.jpg");
+    min-height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    #logo{
+        font-family: 'Vidaloka', serif;
+        font-size: 50px;
+    }
+
 
 
 
