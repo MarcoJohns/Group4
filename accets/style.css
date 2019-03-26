@@ -1,13 +1,7 @@
-/* THIS KEEPS THE FOOTER AT THE BOTTOM.  I DON'T KNOW IF IT WILL AFFECT THE BODY OR NAV BAR THOUGH. */
-body {
-    
-  }
+body{
 
-  main {
-    flex: 1 0 auto;
-  }
-
-  .big-img {
+}
+.big-img {
     /* The image used */
     background-image: url("../images/Canyonlands_National_Park.jpg");
   
@@ -38,3 +32,7 @@ body {
         font-family: 'Vidaloka', serif;
         font-size: 50px;
     }
+
+
+
+
