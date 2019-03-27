@@ -21,6 +21,21 @@ body {
     /* Needed to position the navbar */
     position: relative;
 }
+  .big-winter-img {
+
+     /* The image used */
+     background-image: url("../images/winter-header-page.jpg");
+  
+     min-height: 380px;
+   
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   
+     /* Needed to position the navbar */
+     position: relative;
+  }
 
 #nav-mobile, .brand-logo{
     font-family: 'Italiana', serif;
@@ -38,3 +53,9 @@ body {
         font-family: 'Vidaloka', serif;
         font-size: 50px;
     }
+
+    #ski-sb-container, #snowmobile-container,
+    #tubing-container, #dog-sledding,
+    #mainstreet-shopping {
+padding-bottom: 35px;
+};
