@@ -1,8 +1,6 @@
 /* THIS KEEPS THE FOOTER AT THE BOTTOM.  I DON'T KNOW IF IT WILL AFFECT THE BODY OR NAV BAR THOUGH. */
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    
   }
 
   main {
@@ -27,3 +25,16 @@ body {
 #nav-mobile, .brand-logo{
     font-family: 'Italiana', serif;
 }
+
+.main-container{
+    background-image: url("../images/Best-of-Park-city-main-street.jpg");
+    min-height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    #logo{
+        font-family: 'Vidaloka', serif;
+        font-size: 50px;
+    }
