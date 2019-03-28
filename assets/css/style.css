@@ -24,7 +24,7 @@ body {
   .big-winter-img {
 
      /* The image used */
-     background-image: url("../images/winter-header-page.jpg");
+     background-image: url("");
   
      min-height: 380px;
    
@@ -42,7 +42,7 @@ body {
 }
 
 .main-container{
-    background-image: url("../images/Best-of-Park-city-main-street.jpg");
+    background-image: url("/assets/images/Best-of-Park-city-main-street.jpg");
     min-height: 580px;
     background-position: center;
     background-repeat: no-repeat;
