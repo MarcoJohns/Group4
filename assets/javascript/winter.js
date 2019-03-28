@@ -1,6 +1,6 @@
 
 
-///////////////////// Yelp Review API's ///////////////////////
+///////////////////// Yelp Winter Review API's ///////////////////////
                     // dont touch //
 
 // Red Pine Adventures
@@ -17,11 +17,11 @@ $.ajax({
     var comments = response.reviews[2].text
     $("#redPineReviews").append("Yelp review: ");
     $("#redPineReviews").append(results);
-    $("#redPineReviews").append("/5")
+    $("#redPineReviews").append(" / 5 Stars")
     $("#redPineCustomerComment").append("Customer Reviews: ").append(comments);
 });
 
-// Canyons Ski/SB
+// // Canyons Ski/SB
 var canyonsURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/RVFF4koJbeM0dUAaO28SvA/reviews"
 $.ajax({
     url: canyonsURL,
@@ -36,11 +36,11 @@ $.ajax({
     var comments = response.reviews[2].text
     $("#canyonsReviews").append("Yelp review: ");
     $("#canyonsReviews").append(results);
-    $("#canyonsReviews").append("/5")
+    $("#canyonsReviews").append(" / 5 Stars")
     $("#canyonsCustomerComment").append("Customer Comments: ").append(comments);
 });
 
-// Soldier Hollow Nordic Center
+// // Soldier Hollow Nordic Center
 var soldierHollowURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/WnKVHq6_aijz461b3SxRqA/reviews"
 $.ajax({
     // has no reviews
@@ -55,11 +55,11 @@ $.ajax({
     var results = response.reviews[0].rating
     $("#soldierHollowReviews").append("Yelp review: ");
     $("#soldierHollowReviews").append(results);
-    $("#soldierHollowReviews").append("/5")
+    $("#soldierHollowReviews").append(" / 5 Stars")
     $("#soldierCustomerComment").append("Customer Comments: ").append(comments);
 });
 
-// Luna Lobos Dog Sled
+// // Luna Lobos Dog Sled
 var lunaLobosURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/YR09D-XfQdNKJeENAKJp1Q/reviews"
 $.ajax({
     url: lunaLobosURL,
@@ -73,11 +73,11 @@ $.ajax({
     var results = response.reviews[0].rating
     $("#lunaLobosReviews").append("Yelp review: ");
     $("#lunaLobosReviews").append(results);
-    $("#lunaLobosReviews").append("/5")
+    $("#lunaLobosReviews").append(" / 5 Stars")
     $("#lunaCustomerComment").append("Customer Comments: ").append(comments);
 });
 
-// Park City MS Pizza and Noodle
+// // Park City MS Pizza and Noodle
 var pcMainStreetURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/21Xb2--o4XowCIp4N0YLUg/reviews"
 $.ajax({
     url: pcMainStreetURL,
@@ -91,26 +91,7 @@ $.ajax({
     var results = response.reviews[0].rating
     $("#mainstreetReviews").append("Yelp review: ");
     $("#mainstreetReviews").append(results);
-    $("#mainstreetReviews").append("/5")
+    $("#mainstreetReviews").append(" / 5 Stars")
     $("#mainStreetCustomerComment").append("Customer Comments: ").append(comments);
 
 });
-
-//////////////////// End of Yelp Reviews API's ///////////////////////
-
-
-
-// weather API
-var weatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=84060&appid=63cb4b4f89b17591871bc3bc7aa807f0"
-$.ajax({
-    url: weatherURL,
-    method: "GET"
-}).then(function(response) {
-
-    var weatherResults = response.data;
-
-    // we can pull "main" for current temp
-    // we can pull "weather" for the sky forcast
-    console.log(response);
-})
-
