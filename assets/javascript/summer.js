@@ -102,17 +102,5 @@ $.ajax({
 
 
 
-// weather API
-var weatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=84060&appid=63cb4b4f89b17591871bc3bc7aa807f0"
-$.ajax({
-    url: weatherURL,
-    method: "GET"
-}).then(function(response) {
 
-    var weatherResults = response.data;
-
-    // we can pull "main" for current temp
-    // we can pull "weather" for the sky forcast
-    console.log(response.main.temp);
-});
 
