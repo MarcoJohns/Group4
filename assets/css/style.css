@@ -41,6 +41,8 @@ body {
     font-family: 'Italiana', serif;
 }
 
+
+
 .main-container{
     background-image: url("../images/Best-of-Park-city-main-street.jpg");
     min-height: 580px;
@@ -52,6 +54,7 @@ body {
     #logo{
         font-family: 'Vidaloka', serif;
         font-size: 50px;
+
     }
 
     #ski-sb-container, #snowmobile-container,
@@ -59,3 +62,4 @@ body {
     #mainstreet-shopping {
 padding-bottom: 35px;
 };
+
