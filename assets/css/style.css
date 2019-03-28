@@ -1,8 +1,6 @@
 /* THIS KEEPS THE FOOTER AT THE BOTTOM.  I DON'T KNOW IF IT WILL AFFECT THE BODY OR NAV BAR THOUGH. */
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    
   }
 
   main {
@@ -23,30 +21,27 @@ body {
     /* Needed to position the navbar */
     position: relative;
 }
+  .big-winter-img {
+
+     /* The image used */
+     background-image: url("../images/winter-header-page.jpg");
+  
+     min-height: 380px;
+   
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   
+     /* Needed to position the navbar */
+     position: relative;
+  }
 
 #nav-mobile, .brand-logo{
     font-family: 'Italiana', serif;
 }
 
 
-.big-img {
-    /* The image used */
-    background-image: url("../images/Canyonlands_National_Park.jpg");
-  
-    min-height: 380px;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    /* Needed to position the navbar */
-    position: relative;
-}
-
-#nav-mobile, .brand-logo{
-    font-family: 'Italiana', serif;
-}
 
 .main-container{
     background-image: url("../images/Best-of-Park-city-main-street.jpg");
@@ -59,4 +54,12 @@ body {
     #logo{
         font-family: 'Vidaloka', serif;
         font-size: 50px;
+
     }
+
+    #ski-sb-container, #snowmobile-container,
+    #tubing-container, #dog-sledding,
+    #mainstreet-shopping {
+padding-bottom: 35px;
+};
+
