@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 
 </head>
 
@@ -28,7 +29,10 @@
             </div>
         </nav>
     </div>
-
+    <div class="weather-container">
+        <p id="weather-temp"></p>
+        <p id="weather-forcast"></p>
+    </div>
     <div class=container>
         <h5>
             Now that you have arrived, kick-back, take a breath of fresh air, and have fun. As you explore our charming
@@ -96,32 +100,34 @@
                     </span>
                 </div>
                 <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    <p>If you want to explore some of Park City's Summer activities, cick the image above or link below.
+                    </p>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="summer.html">Check it out</a>
                 </div>
             </div>
         </div>
 
         <div class="col s12 m6">
             <div class="card">
-                <div class="card-image">
-                    <img src="assets/images/fall-card.webp">
-                    <span class="card-title">
-                        <h4>Fall</h4>
-                    </span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
+                <a href="fall.html">
+                    <div class="card-image">
+                        <img src="assets/images/fall-card.webp">
+                </a>
+                <span class="card-title">
+                    <h4>Fall</h4>
+                </span>
+            </div>
+            <div class="card-content">
+                <p>If you want to explore some of Park City's Fall activities, cick the image above or link below.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="fall.html">Check it out</a>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="row">
@@ -131,14 +137,13 @@
                     <div class="card-image">
                         <img src="assets/images/winter-card.jpg">
                 </a>
-                <span class="card-title">
-                    <h4><a class="grey-text text-darken-3" href="#!">Winter</a></h4>
+                <span class="card-title" href="winter.html">
+                    <h4><a class="grey-text text-darken-3" href="winter.html">Winter</a></h4>
                 </span>
 
             </div>
             <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                <p>If you want to explore some of Park City's Winter activities, cick the image above or link below.</p>
             </div>
             <div class="card-action">
                 <a href="winter.html">Check it out</a>
@@ -148,20 +153,21 @@
 
     <div class="col s12 m6">
         <div class="card">
-            <div class="card-image">
-                <img src="assets/images/spring-card.jpg">
-                <span class="card-title">
-                    <h4>Spring</h4>
-                </span>
-            </div>
-            <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-                <a href="#">This is a link</a>
-            </div>
+            <a href="spring.html">
+                <div class="card-image">
+                    <img src="assets/images/spring-card.jpg">
+            </a>
+            <span class="card-title">
+                <h4>Spring</h4>
+            </span>
         </div>
+        <div class="card-content">
+            <p>If you want to explore some of Park City's Spring activities, cick the image above or link below.</p>
+        </div>
+        <div class="card-action">
+            <a href="spring.html">Check it out</a>
+        </div>
+    </div>
     </div>
     </div>
     </div>
@@ -179,40 +185,39 @@
         <div class=row>
             <div class="col s6 m12">
                 <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/restaurant-card.jpg">
-                        <span class="card-title">
-                            <h2>Restaurants</h2>
-                        </span>
-                    </div>
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">this is a link</a>
-                    </div>
+                    <a href="#">
+                        <div class="card-image">
+                            <img src="assets/images/restaurant-card.jpg">
+                    </a>
+                    <span class="card-title">
+                        <h2>Restaurants</h2>
+                    </span>
+                </div>
+                <div class="card-content">
+                    <p>If you want to explore some of Park City's restaurants, cick the image above or link below.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Check it out</a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <footer class="page-footer indigo darken-3">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
-                        content.
+                    <h5 class="white-text"></h5>
+                    <p class="grey-text text-lighten-4">
                     </p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">
+                                <h5>Back to the top</h5>
+                            </a></li>
                     </ul>
                 </div>
             </div>
@@ -220,11 +225,13 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
         </div>
     </footer>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/main.js"></script>
 
 
 </body>
