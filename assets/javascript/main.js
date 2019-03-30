@@ -24,12 +24,6 @@ $.ajax({
     var weatherTemp = response.main.temp;
     var weatherForcast = response.weather[0].description;
 
-    console.log(weatherTemp);
-    console.log(weatherForcast);
-
-    $("#weather-temp").append(weatherTemp);
-    $("#weather-forcast").append(weatherForcast)
-
     database.ref().push({
         temprature: weatherTemp,
         forcast: weatherForcast,
@@ -37,15 +31,13 @@ $.ajax({
 });
 
 // returning database data
-firebase.database().ref().on("child_added", function (snapshot) {
+firebase.database().ref().once("child_added", function (snapshot) {
+  
     var returnedWeather = snapshot.val().temprature;
     var returnedForcast = snapshot.val().forcast;
-
-    // console.log(returnedWeather)
-    // console.log(returnedForcast)
-
-    
-    // $("#weather-temp").append(returnedWeather);
-    // $("#weather-forcast").append(returnedForcast);
+   console.log(returnedWeather);
+       
+    $("#weather-temp").append(returnedWeather);
+    $("#weather-forcast").append(returnedForcast);
 });
 
