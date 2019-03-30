@@ -1,115 +1,125 @@
 /* THIS KEEPS THE FOOTER AT THE BOTTOM.  I DON'T KNOW IF IT WILL AFFECT THE BODY OR NAV BAR THOUGH. */
-body {
-    
-  }
+body {}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
 
-  .big-img {
+.big-img {
     /* The image used */
     background-image: url("../images/Canyonlands_National_Park.jpg");
-  
+
     min-height: 380px;
-  
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
     /* Needed to position the navbar */
     position: relative;
 }
 
 
-.big-summer-img {
+.big-winter-img {
 
-       /* The image used */
-      background-image: url("../images/summer-img-bg.jpg");
-  
-     min-height: 380px;
-     
-     /* Center and scale the image nicely */
-     background-position: center;
-     background-repeat: no-repeat;
+    /* The image used */
+    background-image: url("../images/winter-header-page.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-   
-       /* Needed to position the navbar */
-   position: relative;
-    
 
+    /* Needed to position the navbar */
+    position: relative;
 }
-  .big-winter-img {
 
-     /* The image used */
-     background-image: url("../images/winter-header-page.jpg");
-  
-     min-height: 380px;
-   
-     /* Center and scale the image nicely */
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-   
-     /* Needed to position the navbar */
-     position: relative;
-  }
+#nav-mobile,
+.brand-logo {
 
-     #nav-mobile, .brand-logo{
-      font-family: 'Italiana', serif;
-  }
-
-
-#nav-mobile, .brand-logo{
     font-family: 'Italiana', serif;
 }
 
 .big-summer-img {
 
-     /* The image used */
-     background-image: url("../images/Canyonlands_National_Park.jpg");
-  
-     min-height: 380px;
-   
-     /* Center and scale the image nicely */
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-   
-     /* Needed to position the navbar */
-     position: relative;
-  }
+    /* The image used */
+    background-image: url("../images/Canyonlands_National_Park.jpg");
 
-#nav-mobile, .brand-logo{
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+
+#nav-mobile,
+.brand-logo {
+    font-family: 'Italiana', serif;
+}
+
+.big-fall-img {
+
+    /* The image used */
+    background-image: url("../images/parkcity-fall.jpg");
+
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+
+#nav-mobile,
+.brand-logo {
     font-family: 'Italiana', serif;
 }
 
 
 
 
-.main-container{
+.main-container {
+
     background-image: url("../images/Best-of-Park-city-main-street.jpg");
     min-height: 580px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
+}
 
-    #logo{
-        font-family: 'Vidaloka', serif;
-        font-size: 50px;
+#logo {
+    font-family: 'Vidaloka', serif;
+    font-size: 50px;
 
-    }
+}
 
-    #ski-sb-container, #snowmobile-container,
-    #tubing-container, #dog-sledding,
-    #mainstreet-shopping {
-padding-bottom: 35px;
-};
+#ski-sb-container,
+#snowmobile-container,
+#tubing-container,
+#dog-sledding,
+#mainstreet-shopping {
+    padding-bottom: 35px;
+}
+
+
 
 /* Spring page style */
-.spring{
+.spring {
     background-image: url("../images/spring-activities.jpg");
     min-height: 380px;
     background-position: center;
@@ -118,8 +128,12 @@ padding-bottom: 35px;
 
 }
 
-#deer-val-container, #olympic-container,
-    #canyon-container, #fishing-container,
-    #swaner-shopping {
-padding-bottom: 35px;
-};
+#deer-val-container,
+#olympic-container,
+#canyon-container,
+#fishing-container,
+#swaner-shopping {
+    padding-bottom: 35px;
+}
+
+;
