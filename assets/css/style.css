@@ -136,4 +136,8 @@ main {
     padding-bottom: 35px;
 }
 
-;
+.weather-container {
+  font-family: 'Acme', sans-serif;
+  display: inline-flex;
+  font-size: 25px;
+}
