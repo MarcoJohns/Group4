@@ -21,6 +21,25 @@ body {
     /* Needed to position the navbar */
     position: relative;
 }
+
+
+.big-summer-img {
+
+       /* The image used */
+      background-image: url("../images/summer-img-bg.jpg");
+  
+     min-height: 380px;
+     
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+   
+       /* Needed to position the navbar */
+   position: relative;
+    
+
+}
   .big-winter-img {
 
      /* The image used */
@@ -36,6 +55,11 @@ body {
      /* Needed to position the navbar */
      position: relative;
   }
+
+     #nav-mobile, .brand-logo{
+      font-family: 'Italiana', serif;
+  }
+
 
 #nav-mobile, .brand-logo{
     font-family: 'Italiana', serif;
@@ -60,6 +84,7 @@ body {
 #nav-mobile, .brand-logo{
     font-family: 'Italiana', serif;
 }
+
 
 
 
