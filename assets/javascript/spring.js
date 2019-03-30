@@ -13,10 +13,10 @@ $.ajax({
     console.log(results);
     var comments = response.reviews[2].text
     console.log(comments);
-    $("#redPineReviews").append("Yelp review: ");
-    $("#redPineReviews").append(results);
-    $("#redPineReviews").append("/5")
-    $("#redPineCustomerComment").append("Customer Reviews: ").append(comments);
+    $("#deerValleyReviews").append("Yelp review: ");
+    $("#deerValleyReviews").append(results);
+    $("#deerValleyReviews").append("/5")
+    $("#deerValleyCustomerComment").append("Customer Reviews: ").append(comments);
 });
 
 // Olympic Park
@@ -33,9 +33,9 @@ $.ajax({
     var results = response.reviews[0].rating
     console.log(results);
     var comments = response.reviews[2].text
-    $("#canyonsReviews").append("Yelp review: ");
-    $("#canyonsReviews").append(results);
-    $("#canyonsReviews").append("/5")
+    $("#olympicParkReviews").append("Yelp review: ");
+    $("#olympicParkReviews").append(results);
+    $("#olympicParkReviews").append("/5")
     $("#canyonsCustomerComment").append("Customer Comments: ").append(comments);
 });
 
@@ -52,10 +52,10 @@ $.ajax({
 
     var comments = response.reviews[0].text
     var results = response.reviews[0].rating
-    $("#soldierHollowReviews").append("Yelp review: ");
-    $("#soldierHollowReviews").append(results);
-    $("#soldierHollowReviews").append("/5")
-    $("#soldierCustomerComment").append("Customer Comments: ").append(comments);
+    $("#canyonsReviews").append("Yelp review: ");
+    $("#canyonsReviews").append(results);
+    $("#canyonsReviews").append("/5")
+    $("#canyonsCustomerComment").append("Customer Comments: ").append(comments);
 });
 
 // Fly Fishing
@@ -70,10 +70,10 @@ $.ajax({
 
     var comments = response.reviews[2].text
     var results = response.reviews[0].rating
-    $("#lunaLobosReviews").append("Yelp review: ");
-    $("#lunaLobosReviews").append(results);
-    $("#lunaLobosReviews").append("/5")
-    $("#lunaCustomerComment").append("Customer Comments: ").append(comments);
+    $("#flyFishingReviews").append("Yelp review: ");
+    $("#flyFishingReviews").append(results);
+    $("#flyFishingReviews").append("/5")
+    $("#flyFishingCustomerComment").append("Customer Comments: ").append(comments);
 });
 
 // Swaner Preserve
@@ -88,10 +88,10 @@ $.ajax({
 
     var comments = response.reviews[0].text
     var results = response.reviews[0].rating
-    $("#mainstreetReviews").append("Yelp review: ");
-    $("#mainstreetReviews").append(results);
-    $("#mainstreetReviews").append("/5")
-    $("#mainStreetCustomerComment").append("Customer Comments: ").append(comments);
+    $("#swanerReviews").append("Yelp review: ");
+    $("#swanerReviews").append(results);
+    $("#swanerReviews").append("/5")
+    $("#swanerCustomerComment").append("Customer Comments: ").append(comments);
 
 });
 
